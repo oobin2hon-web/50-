@@ -1,1 +1,102 @@
-index.html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLDOUT2 管理ツール</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+            margin: 0 0 8px 0;
+        }
+        .header p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+        .menu-card {
+            background-color: white;
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: inherit;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+        .menu-card:hover {
+            background-color: #e8f3ff;
+            transform: translateY(-2px);
+        }
+        .menu-content h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 0 0 4px 0;
+        }
+        .menu-content p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+        .arrow {
+            font-size: 20px;
+            color: #0066cc;
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>SOLDOUT2 管理ツール</h1>
+            <p>目的に応じたツールを選択してください。</p>
+        </div>
+
+        <!-- メニュー1 -->
+        <a href="sales.html" class="menu-card">
+            <div class="menu-content">
+                <h2>販売・作業管理ツール</h2>
+                <p>在庫・価格・販売実績から完売予想や売上を計算・保存します。</p>
+            </div>
+            <div class="arrow">&rarr;</div>
+        </a>
+
+        <!-- メニュー2 -->
+        <a href="work_tool.html" class="menu-card">
+            <div class="menu-content">
+                <h2>作業データ解析ツール (Work Tool)</h2>
+                <p>作業ログの解析や効率の計算を行います。</p>
+            </div>
+            <div class="arrow">&rarr;</div>
+        </a>
+    </div>
+
+</body>
+</html>
